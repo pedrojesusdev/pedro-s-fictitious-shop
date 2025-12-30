@@ -1,0 +1,11 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --gray: #aaa;
+  --primary: #e50914;
+
+  --font-main: 'Inter', sans-serif;
+
+  --radius: 8px;
+  --transition: 0.3s ease;
+}

@@ -1,0 +1,12 @@
+.btn {
+  padding: 12px 24px;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.product-card {
+  background: #111;
+  border-radius: var(--radius);
+}
