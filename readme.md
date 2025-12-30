@@ -1,10 +1,11 @@
-🛍️ Pedro’s Fictitious Shop
+## 🛍️ Pedro’s Fictitious Shop
 
 A fictitious e-commerce website inspired by the Nike website, created exclusively for practice and learning purposes.
 
 This project focuses on improving HTML, CSS, and JavaScript skills, especially in layout, styling, modular JavaScript, and SPA-like routing without frameworks.
 
-🎯 Purpose
+
+# 🎯 Purpose
 
 The main goals of this project are:
 
@@ -20,23 +21,26 @@ Simulate a Single Page Application (SPA) using only vanilla JavaScript
 
 Apply real-world folder and file organization used in front-end projects
 
-⚠️ This is not a real store. No purchases, payments, or real data are involved.
 
-🧱 Technologies Used
+# ⚠️ This is not a real store. No purchases, payments, or real data are involved.
 
-HTML5
 
-CSS3
+# 🧱 Technologies Used
 
-JavaScript (ES6+)
+- HTML5
 
-Vanilla JS Routing (History API)
+- CSS3
 
-Live Server (for local development)
+- JavaScript (ES6+)
 
-No frameworks or libraries were used.
+- Vanilla JS Routing (History API)
 
-📂 Project Structure
+- Live Server (for local development)
+
+- No frameworks or libraries were used.
+
+
+# 📂 Project Structure
 .
 ├── index.html
 └── assets
@@ -62,7 +66,8 @@ No frameworks or libraries were used.
         └── data
             └── products.js
 
-🧭 How Navigation Works
+
+# 🧭 How Navigation Works
 
 This project uses a single HTML file (index.html) and simulates multiple pages using:
 
@@ -74,27 +79,8 @@ A custom router that maps URLs to JavaScript functions
 
 Each “page” is rendered dynamically inside the <main id="app"></main> element.
 
-🚀 How to Run the Project
 
-Because ES Modules are used, the project must be served via a local server.
-
-Option 1: VS Code Live Server
-
-Install the Live Server extension
-
-Right-click index.html
-
-Click "Open with Live Server"
-
-Option 2: Simple HTTP Server (Python)
-python3 -m http.server
-
-
-Then open:
-
-http://localhost:8000
-
-📚 What I’m Practicing With This Project
+# 📚 What I’m Practicing With This Project
 
 SPA concepts without frameworks
 
@@ -108,21 +94,15 @@ DOM manipulation and event handling
 
 Scalable CSS organization
 
-🧠 Inspiration
+
+# 🧠 Inspiration
 
 This project is visually and conceptually inspired by Nike’s website, but no assets, branding, or content are copied.
 
 All content is fictional and created solely for educational purposes.
 
-📌 Disclaimer
+
+# 📌 Disclaimer
 
 This project is for learning only.
 It is not affiliated with Nike or any other brand.
-
-Se quiser, no próximo passo eu posso:
-
-adaptar esse README para um tom mais corporativo
-
-ou deixar ele mais estudante / portfólio
-
-ou incluir screenshots e badges
