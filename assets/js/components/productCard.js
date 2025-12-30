@@ -1,17 +1,10 @@
 export function createProductCard(product) {
-  const div = document.createElement("div");
-  div.className = "product-card";
-
-  div.innerHTML = `
-    <img src="./assets/images/products/${product.image}">
-    <h3>${product.name}</h3>
-    <p>R$ ${product.price}</p>
+  return `
+    <article class="product-card">
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>${product.price}</p>
+      <a href="/product" data-link="/product">View product</a>
+    </article>
   `;
-
-  div.addEventListener("click", () => {
-    history.pushState(null, "", `/product?id=${product.id}`);
-    window.dispatchEvent(new Event("popstate"));
-  });
-
-  return div;
 }

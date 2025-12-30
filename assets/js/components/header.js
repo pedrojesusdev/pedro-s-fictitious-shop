@@ -8,14 +8,4 @@ export function renderHeader() {
       <a href="/cart" data-link>Carrinho</a>
     </nav>
   `;
-
-  document.querySelectorAll("[data-link]").forEach(link => {
-    link.addEventListener("click", e => {
-      e.preventDefault();
-      history.pushState(null, "", link.getAttribute("href"));
-      window.dispatchEvent(new Event("popstate"));
-    });
-  });
 }
-
-window.addEventListener("popstate", router);

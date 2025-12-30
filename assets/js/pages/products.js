@@ -1,13 +1,16 @@
-import { products } from "../data/products.js";
-import { createProductCard } from "../components/productCard.js";
-
 export function productsPage() {
   const app = document.getElementById("app");
-  app.innerHTML = `<section class="grid products"></section>`;
 
-  const grid = document.querySelector(".products");
+  app.innerHTML = `
+    <section class="products">
+      <h1>Products</h1>
+      <div class="products-grid"></div>
+    </section>
+  `;
 
-  products.forEach(p => {
-    grid.appendChild(createProductCard(p));
+  const grid = document.querySelector(".products-grid");
+
+  products.forEach(product => {
+    grid.innerHTML += createProductCard(product);
   });
 }
