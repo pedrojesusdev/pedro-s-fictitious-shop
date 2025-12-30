@@ -1,11 +1,11 @@
-## 🛍️ Pedro’s Fictitious Shop
+# 🛍️ Pedro’s Fictitious Shop
 
 A fictitious e-commerce website inspired by the Nike website, created exclusively for practice and learning purposes.
 
 This project focuses on improving HTML, CSS, and JavaScript skills, especially in layout, styling, modular JavaScript, and SPA-like routing without frameworks.
 
 
-# 🎯 Purpose
+## 🎯 Purpose
 
 The main goals of this project are:
 
@@ -22,10 +22,10 @@ Simulate a Single Page Application (SPA) using only vanilla JavaScript
 Apply real-world folder and file organization used in front-end projects
 
 
-# ⚠️ This is not a real store. No purchases, payments, or real data are involved.
+## ⚠️ This is not a real store. No purchases, payments, or real data are involved.
 
 
-# 🧱 Technologies Used
+## 🧱 Technologies Used
 
 - HTML5
 
@@ -40,7 +40,7 @@ Apply real-world folder and file organization used in front-end projects
 - No frameworks or libraries were used.
 
 
-# 📂 Project Structure
+## 📂 Project Structure
 .
 ├── index.html
 └── assets
@@ -67,7 +67,7 @@ Apply real-world folder and file organization used in front-end projects
             └── products.js
 
 
-# 🧭 How Navigation Works
+## 🧭 How Navigation Works
 
 This project uses a single HTML file (index.html) and simulates multiple pages using:
 
@@ -80,7 +80,7 @@ A custom router that maps URLs to JavaScript functions
 Each “page” is rendered dynamically inside the <main id="app"></main> element.
 
 
-# 📚 What I’m Practicing With This Project
+## 📚 What I’m Practicing With This Project
 
 SPA concepts without frameworks
 
@@ -95,14 +95,14 @@ DOM manipulation and event handling
 Scalable CSS organization
 
 
-# 🧠 Inspiration
+## 🧠 Inspiration
 
 This project is visually and conceptually inspired by Nike’s website, but no assets, branding, or content are copied.
 
 All content is fictional and created solely for educational purposes.
 
 
-# 📌 Disclaimer
+## 📌 Disclaimer
 
 This project is for learning only.
 It is not affiliated with Nike or any other brand.
