@@ -6,7 +6,7 @@ export function createProductCard(product) {
     <img src="${product.image}" alt="${product.name}">
     <h3>${product.name}</h3>
     <p>${product.price}</p>
-    <button class="btn-primary">Comprar</button>
+    <button class="btn-primary">Buy</button>
   `;
 
   return card;
