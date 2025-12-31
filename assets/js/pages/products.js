@@ -1,15 +1,18 @@
-import { products } from "../data/products.js";
-import { createProductCard } from "../utils/createProductCard.js";
+import { createProductCard } from "../components/productCard.js";
 
 export function productsPage() {
-  const container = document.querySelector(".products-grid");
+  const app = document.getElementById("app");
 
-  if (!container) return;
+  app.innerHTML = `
+    <section class="products">
+      <h1>Products</h1>
+      <div class="products-grid">${featured.map(createProductCard).join("")}</div>
+    </section>
+  `;
 
-  container.innerHTML = "";
+  const grid = document.querySelector(".products-grid");
 
   products.forEach(product => {
-    const card = createProductCard(product);
-    container.appendChild(card);
+    grid.innerHTML += createProductCard(product);
   });
 }

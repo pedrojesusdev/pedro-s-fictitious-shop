@@ -7,6 +7,7 @@ export function createProductCard(product) {
         <img src="${product.image}" alt="${product.name}">
         <h3>${product.name}</h3>
         <p>${formatPrice(product.price)}</p>
+        <button class="btn-primary">Buy</button>
       </a>
     </article>
   `;
