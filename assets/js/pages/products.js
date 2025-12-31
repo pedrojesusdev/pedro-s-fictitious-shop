@@ -1,16 +1,15 @@
+import { products } from "../data/products.js";
+import { createProductCard } from "../utils/createProductCard.js";
+
 export function productsPage() {
-  const app = document.getElementById("app");
+  const container = document.querySelector(".products-grid");
 
-  app.innerHTML = `
-    <section class="products">
-      <h1>Products</h1>
-      <div class="products-grid"></div>
-    </section>
-  `;
+  if (!container) return;
 
-  const grid = document.querySelector(".products-grid");
+  container.innerHTML = "";
 
   products.forEach(product => {
-    grid.innerHTML += createProductCard(product);
+    const card = createProductCard(product);
+    container.appendChild(card);
   });
 }

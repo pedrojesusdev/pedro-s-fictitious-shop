@@ -64,10 +64,13 @@ body {
 }
 
 .hero {
+  background: linear-gradient(180deg, #000 0%, #222 100%);
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 72px;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-container {
