@@ -1,5 +1,10 @@
+import { products } from "../data/products.js";
+import { createProductCard } from "../components/productCard.js";
+
 export function homePage() {
   const app = document.getElementById("app");
+
+  const featured = products.slice(0, 3);
 
   app.innerHTML = `
     <section class="hero">
@@ -17,10 +22,12 @@ export function homePage() {
     </div>
     </div>
     </section>
-  `;
 
-  document.querySelector("[data-go]").addEventListener("click", () => {
-    history.pushState(null, "", "/products");
-    window.dispatchEvent(new Event("popstate"));
-  });
-}
+    <section class="featured-products container">
+      <h2>Featured</h2>
+      <div class="products-grid">
+        ${featured.map(createProductCard).join("")}
+      </div>
+    </section>
+  `;
+  }

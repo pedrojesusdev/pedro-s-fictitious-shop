@@ -1,0 +1,40 @@
+.featured-products {
+  margin-top: 6rem;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.product-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  display: block;
+}
+
+.product-card h3 {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.product-card p {
+  padding: 0 1rem 1.2rem;
+  color: #ccc;
+}

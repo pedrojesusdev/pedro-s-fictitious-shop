@@ -5,17 +5,13 @@ import { router } from "./router.js";
 renderHeader();
 renderFooter();
 
-router();
-
+window.addEventListener("popstate", router);
 document.addEventListener("click", (event) => {
   const link = event.target.closest("[data-link]");
   if (!link) return;
-
-  event.preventDefault();
-  const path = link.getAttribute("data-link");
-
-  history.pushState(null, "", path);
+  e.preventDefault();
+  history.pushState(null, "", link.getAttribute("href"));
   router();
 });
 
-window.addEventListener("popstate", router);
+router();
