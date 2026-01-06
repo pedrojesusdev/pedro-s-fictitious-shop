@@ -1,10 +1,8 @@
 import { renderHeader } from "./components/header.js";
-import { productPage } from "./pages/product.js";
 import { renderFooter } from "./components/footer.js";
 import { router } from "./router.js";
 
 renderHeader();
-productPage();
 renderFooter();
 
 window.addEventListener("popstate", router);
