@@ -4,7 +4,9 @@ export function createProductCard(product) {
   return `
     <article class="product-card">
       <a href="/product/${product.id}" data-link class="product-link">
-        <img src="${product.image}" alt="${product.name}">
+        <div class="product-card-image">
+          <img src="${product.image}" alt="${product.name}">
+        </div>
         <h3>${product.name}</h3>
         <p>${formatPrice(product.price)}</p>
       </a>

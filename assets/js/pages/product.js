@@ -7,14 +7,24 @@ export function productPage(id) {
   const product = products.find(p => String(p.id) === String(id));
 
   if (!product) {
-    app.innerHTML = "<p>Produto não encontrado.</p>";
+    app.innerHTML = `
+      <section class="container">
+        <div class="product-not-found">
+          <h1>Product Not Found</h1>
+          <p>The product you're looking for doesn't exist.</p>
+          <a href="/products" data-link="/products" class="btn-primary">Browse Products</a>
+        </div>
+      </section>
+    `;
     return;
   }
 
   app.innerHTML = `
     <section class="container product-page">
-      <img src="${product.image}" alt="${product.name}">
-      <div>
+      <div class="product-page-image">
+        <img src="${product.image}" alt="${product.name}">
+      </div>
+      <div class="product-page-info">
         <h1>${product.name}</h1>
         <p class="product-category">${product.category}</p>
         <p class="product-price">${formatPrice(product.price)}</p>

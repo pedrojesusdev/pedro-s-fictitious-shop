@@ -56,7 +56,7 @@ export function productsPage() {
     // Atualizar contador
     const countElement = document.querySelector(".products-count");
     if (countElement) {
-      countElement.textContent = `${filteredProducts.length} produto${filteredProducts.length !== 1 ? 's' : ''} disponível${filteredProducts.length !== 1 ? 'is' : ''}`;
+      countElement.textContent = `${filteredProducts.length} available product${filteredProducts.length !== 1 ? 's' : ''}`;
     }
   }
 

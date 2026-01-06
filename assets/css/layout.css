@@ -2,6 +2,13 @@ body {
   font-family: 'Inter', Arial, sans-serif;
   background-color: #000;
   color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: calc(100vh - 72px);
+  padding-top: 72px;
 }
 
 .header {

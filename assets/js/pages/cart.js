@@ -50,7 +50,9 @@ function createCartItem(item) {
   
   return `
     <div class="cart-item" data-id="${item.id}">
-      <img src="${item.image}" alt="${item.name}">
+      <div class="cart-item-image">
+        <img src="${item.image}" alt="${item.name}">
+      </div>
       <div class="cart-item-info">
         <h3>${item.name}</h3>
         <p class="cart-item-category">${item.category}</p>
